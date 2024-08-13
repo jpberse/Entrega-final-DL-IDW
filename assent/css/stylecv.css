@@ -1,0 +1,205 @@
+body{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+}
+nav{
+    width: auto;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url(../fondos/cv.jpg);
+    background-size: cover;
+    background-position: center;
+}
+main{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image:url(../fondos/estudios.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+.section1{
+    height: 1080px;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+.pregrado{
+    margin: 0%;
+    margin-top: 10%;
+    margin-left: 5%;
+    box-sizing: border-box;
+
+}
+.cajacv{
+    border: solid 1px black;
+    height: 600px;
+    width: 400px;
+    margin: 10%;
+    margin-left: 30%;
+    padding: 2%;
+    flex-wrap: nowrap;
+    box-sizing: content-box;
+}
+.article-section2, .article-section3, .article-section1 {
+    height: 1080px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.article-section2{
+    height: 1080px;
+    width: 100%;
+    box-sizing: border-box;
+    background-image:url(../fondos/acutualidad.jpg);
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+.fotodeltrabajo{
+    margin: 5%;
+    height: 70%;
+    margin-top: 20%;
+    background-image: url(../img/pavimentos.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.loquehago{
+    margin-top: 25%;
+}
+.article-section3{
+    height: 1080px;
+    width: 100%;
+    box-sizing: border-box;
+    background-image:url(../fondos/redes.jpg);
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icono-enlace{
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+}
+.row{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+footer {
+    font-size: 12px;
+}
+
+@media (max-width: 991px){
+
+    nav{
+        box-sizing: border-box;
+        background-image: url(../fondos/cvmedia.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    main{
+        height: auto;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-image:url(../fondos/indexmedia.jpg);
+        background-position: center;
+        background-size: cover;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .section1{
+        height: auto;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pregrado{
+        margin: auto;
+        margin-top: 20%;
+    }
+    .cajacv{
+        align-content: flex-start;
+        margin-left: 0;
+        font-size: 0,05rem;
+
+    }
+        .article-section2, .article-section3, .article-section1 {
+            height: auto;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .article-section2{
+            height: auto;
+            width: 100%;
+            box-sizing: border-box;
+            background-image:url(../fondos/acutualidadmedia.jpg);
+            background-position:center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+        .fotodeltrabajo{
+            margin: 5%;
+            height: 70vh;
+            margin-top: 20%;
+            background-image: url(../img/pavimentos.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+        .loquehago{
+            margin-top: 25%;
+        }
+        .article-section3{
+            height: auto;
+            width: 100%;
+            box-sizing: border-box;
+            background-image:url(../fondos/redesmedia.jpg);
+            background-position:right;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .iconos{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icono-enlace{
+            font-size: 3rem;
+            text-align: center;
+            color: black;
+        }
+        .row{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+}
+
+

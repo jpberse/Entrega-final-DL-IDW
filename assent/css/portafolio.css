@@ -1,0 +1,212 @@
+body{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*intro*/
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.89);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*titulo portafolio*/
+main h1{
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-align: end;
+    align-items: flex-end;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*3 cajas para ocupar hover*/
+.main-cajas1,.main-cajas2,.main-cajas3{
+    height: 400px;
+    width: 150px;
+    border-radius: 3%;
+    margin-top: 0;
+}
+/*fotos para las cajas*/
+.main-cajas1{
+    background-image: url(../img/portafolio/arquitectura.webp);
+    background-position: center;
+    background-size: contain;
+}
+.main-cajas2{
+    background-image: url(../img/portafolio/programacion.webp);
+    background-position: center;
+    background-size: contain;
+}
+.main-cajas3{
+    background-image: url(../img/portafolio/ingenieria.webp);
+    background-position: center;
+    background-size: contain;
+}
+/*link para ocupar en el hover, ojo de ocupar opacity 0*/
+.main-cajas1 a,.main-cajas2 a,.main-cajas3 a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(39, 38, 38, 0.8);
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    transition: .5s ease;
+    z-index: 10;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/*hover de la intro*/
+.main-cajas1:hover a, .main-cajas2:hover a,.main-cajas3:hover a{
+    opacity: 1;
+}
+/*segunda diapo de la pagina, arquitectura*/
+.arquitectura{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+/*esta es para la primera columna*/
+.cajas-arq {
+    flex-direction: column;
+}
+/*esta es la segunda columna, solo foto de fondo*/
+.cajas-arq-fondo {
+    flex-direction: column;
+    background-image: url(../img/portafolio/fondo-caja-arquitectura.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+/*esta es la primera columna, dividi en dos cajas con display column*/
+
+.cajas-arq-texto{
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1%;
+    margin: 10%;
+    margin-bottom: 0;
+    display: flex;
+}
+.cajas-arq-texto, p{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 3%;
+}
+/*aqui debiera ir el carrusel*/
+/*tercera caja, me ayude de free code boostrap*/
+
+.portafolio.dl{
+    padding: 40px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.proyectos-contenedor{
+    height: auto;
+    padding-top: 60px;
+    margin-bottom: 40px;
+    display: flex;
+}
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.seccion-descripcion{
+    font-size: 1rem;
+    color: grey;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.proyecto img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+/*para el hover*/
+.proyecto{
+    position: relative;
+}
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.proyecto:hover img{
+    opacity: 0.2;
+    }
+.proyecto:hover .overlay{
+    opacity: 1;
+
+}
+.overlay .iconos-contenedor{
+    display: flex;
+}
+.overlay i{
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+/*proyectos de ingenieria*/
+.ing{
+    height: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.89);
+    margin-top: 2rem;
+}
+.titulo-ing2{
+    text-transform: lowercase;
+    margin: 10%;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    height: 2rem;
+}
+.titulo-ing{
+    margin: 10%;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    height: 2rem;
+}
+
+/*CARRUSEL BOOTSTRAP*/
+.fotoing{
+    height: auto;
+    width: 100%;
+}
+footer {
+    font-size: 12px;
+    text-align: center;
+}
